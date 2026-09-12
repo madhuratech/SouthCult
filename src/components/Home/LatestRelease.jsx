@@ -3,33 +3,57 @@ import { ArrowUpRight, Play } from "lucide-react";
 export default function LatestRelease() {
     return (
         <>
-          
+
+         
             {/* SECTION 1 : Sticky Heading */}
-            <section className="sticky top-0 h-[360px] bg-[#050505] -mt-px  flex items-center justify-end z-0 overflow-hidden">
+            <section className="sticky top-0 h-[300px] sm:h-[360px] bg-[#050505] -mt-px flex items-center justify-end z-0 overflow-hidden">
                 <div className="w-full max-w-7xl mx-auto px-6">
-                    <div className="text-right  leading-[0.82]">
+                    <div className="text-right">
+
                         <h1
-                            className="text-[56px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase"
+                            className="
+                    text-[52px]
+                    sm:text-[80px]
+                    md:text-[120px]
+                    lg:text-[150px]
+                    font-black
+                    uppercase
+                    leading-[0.95]
+                    sm:leading-[0.82]
+                "
                             style={{
                                 color: "transparent",
-                                WebkitTextStroke: "2px rgba(255,255,255,0.15)",
+                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             LATEST
                         </h1>
 
                         <h1
-                            className="text-[56px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase -mt-2 md:mt-2"
+                            className="
+                    text-[52px]
+                    sm:text-[80px]
+                    md:text-[120px]
+                    lg:text-[150px]
+                    font-black
+                    uppercase
+                    leading-[0.95]
+                    sm:leading-[0.82]
+                    mt-1
+                    sm:mt-2
+                "
                             style={{
                                 color: "transparent",
-                                WebkitTextStroke: "2px rgba(255,255,255,0.15)",
+                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             RELEASE
                         </h1>
+
                     </div>
                 </div>
             </section>
+            
 
             {/* SECTION 2 : Covers the sticky section */}
             <section className="relative z-10 bg-[#050505]">

@@ -8,6 +8,7 @@ import WhatWeCreate from '../components/Home/WhatWeCreate'
 import Collab from '../components/Home/Collab'
 import Footer from '../components/Layout/footer'
 import Navbar from '../components/Layout/navbar'
+import UpcomingRelease from '../components/Home/UpcomingRelease'
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
             <LatestRelease />
             <StreamingPartners />
             <FeaturedArtists />
+            <UpcomingRelease/>
             <Collab />
             <Footer/>
         </div>

@@ -23,36 +23,57 @@ export default function OurArtists() {
     return (
         <>
             {/* Sticky Heading */}
-            <section className="sticky top-0 h-[360px] bg-[#050505] flex items-center z-0 overflow-hidden">
+            <section className="sticky top-0 h-[300px] sm:h-[360px] bg-[#050505] flex items-center z-0 overflow-hidden">
                 <div className="w-full max-w-7xl mx-auto px-6">
-                    <div className="leading-[0.82] ">
+                    <div className="text-left">
+
                         <h1
-                            className="text-[56px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase"
+                            className="
+                                text-[52px]
+                                sm:text-[80px]
+                                md:text-[120px]
+                                lg:text-[150px]
+                                font-black
+                                uppercase
+                                leading-[0.95]
+                                sm:leading-[0.82]
+                            "
                             style={{
                                 color: "transparent",
-                                WebkitTextStroke: "2px rgba(255,255,255,0.15)",
+                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             OUR
                         </h1>
 
                         <h1
-                            className="text-[56px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase -mt-2 md:mt-2"
+                            className="
+                                text-[52px]
+                                sm:text-[80px]
+                                md:text-[120px]
+                                lg:text-[150px]
+                                font-black
+                                uppercase
+                                leading-[0.95]
+                                sm:leading-[0.82]
+                                mt-1
+                                sm:mt-2
+                            "
                             style={{
                                 color: "transparent",
-                                WebkitTextStroke: "2px rgba(255,255,255,0.15)",
+                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             ARTISTS
                         </h1>
+
                     </div>
                 </div>
             </section>
 
-
             {/* Artist Section */}
             <section className="relative z-10 bg-[#050505]">
-                <div className="max-w-7xl mx-auto px-6 py-24">
+                <div className="max-w-7xl mx-auto px-6 py-20 sm:py-24">
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
@@ -70,8 +91,6 @@ export default function OurArtists() {
                             />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-
-
 
                             <div className="absolute bottom-6 left-6 right-6">
                                 <p className="text-white text-xs uppercase tracking-[0.3em] mb-2">
@@ -104,8 +123,6 @@ export default function OurArtists() {
                             />
 
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
-
-
 
                             <div className="absolute bottom-6 left-6 right-6">
                                 <p className="text-white text-xs uppercase tracking-[0.3em] mb-2">
@@ -152,7 +169,7 @@ export default function OurArtists() {
                             SouthCult
                         </p>
 
-                        <h2 className="text-4xl md:text-5xl  font-clash text-white">
+                        <h2 className="text-4xl md:text-5xl font-clash text-white">
                             Be the Next Name We Amplify
                         </h2>
                     </div>
