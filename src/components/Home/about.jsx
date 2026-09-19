@@ -68,14 +68,14 @@ export default function About() {
                         CULT
                     </h2>
 
-                    <div className="centerLine w-24 h-[2px] bg-white mb-6" />
+                    <div className="centerLine w-24 h-[2px] bg-white mb-6 text-[#cfcfcf]" />
 
-                    <p className="text-neutral-300 text-lg leading-8 mb-6">
+                    <p className=" text-lg leading-8 mb-6">
                         SouthCult is a music production company creating premium ready-made
                         tracks for films, content creators, brands, and independent artists.
                     </p>
 
-                    <p className="text-neutral-500 leading-8 mb-10">
+                    <p className=" leading-8 mb-10">
                         Our catalogue features original compositions across cinematic, folk,
                         devotional, lo-fi, and contemporary genres crafted for instant licensing
                         and professional use.

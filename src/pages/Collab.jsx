@@ -6,7 +6,7 @@ import WhoWeCollaborate from '../components/Collab/WhoWeCollaborat'
 
 function Collab() {
   return (
-    <div>
+    <div >
         <Navbar/>
         <CollaborationHero/>
         <WhoWeCollaborate/>

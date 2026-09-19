@@ -43,7 +43,7 @@ Thanks!`);
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#050505] text-white font-clash ">
+    <section className="relative overflow-hidden bg-[#050505] text-white font-clash">
 
       <div className="mx-auto flex max-w-7xl flex-col px-6 py-10 md:px-10 md:py-12">
 

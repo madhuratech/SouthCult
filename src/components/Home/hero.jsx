@@ -8,8 +8,6 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 flex min-h-screen flex-col">
 
-                
-
                 {/* Hero Content */}
                 <div className="flex flex-1 items-center justify-center px-6 pb-20 text-center">
 
@@ -25,7 +23,7 @@ export default function Hero() {
                         </h2>
 
                         {/* Description */}
-                        <p className="mx-auto mt-8 max-w-xl text-sm leading-7 text-white/55 md:text-base">
+                        <p className="mx-auto font-clash mt-8 max-w-xl text-sm leading-7 text-white/55 md:text-base">
                             We turn stories, ideas and sounds from the South
                             into music and moving images.
                         </p>
@@ -35,7 +33,7 @@ export default function Hero() {
 
                             <a
                                 href="/collab"
-                                className="group flex items-center gap-3 rounded-full border border-white/20 bg-white px-7 py-3 text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
+                                className="group font-clash flex items-center gap-3 rounded-full border border-white/20 bg-white px-7 py-3 text-sm font-medium text-black transition-all duration-300 hover:bg-white/90"
                             >
                                 Collaborate with Us
 
@@ -49,7 +47,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-               
+
 
             </div>
         </section>

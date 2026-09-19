@@ -9,7 +9,7 @@ const creations = [
         number: "01",
         title: "Music",
         description:
-            "Original sounds, independent artists, and releases built to travel beyond the moment.",
+            "Original sounds, independent artists, and releases built to travel beyond the moment.Original sounds, independent artists, and releases built to travel beyond the momentOriginal sounds, independent artists, and releases built to travel beyond the moment Original sounds, independent artists, and releases built to travel beyond the momentOriginal sounds, independent artists, and releases built to travel beyond the moment Original sounds, independent artists, and releases built to travel beyond the moment",
     },
     {
         number: "02",

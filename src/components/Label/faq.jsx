@@ -219,7 +219,7 @@ export default function FAQ() {
         </div>
 
         {/* ================= FOOTER ================= */}
-        <div className="mt-10 flex flex-col justify-between gap-3 border-t border-white/10 pt-6 text-[10px] uppercase tracking-[0.3em] text-white/30 sm:flex-row">
+        <div className="mt-10 flex flex-col justify-between gap-3 pt-6 text-[10px] uppercase tracking-[0.3em] text-white/30 sm:flex-row">
           <span>South Cult Label</span>
 
           <span>

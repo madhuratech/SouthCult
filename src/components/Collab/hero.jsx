@@ -105,7 +105,7 @@ export default function CollaborationHero() {
             {/* Cinematic bottom frame */}
             <div
                 className="
-                    absolute bottom-7
+                    absolute 
                     left-6 right-6
                     md:left-10 md:right-10
                     lg:left-16 lg:right-16

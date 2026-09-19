@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SouthCultLabel from "./pages/Label";
 import Collab from "./pages/Collab";
 import PageLoader from "./components/Layout/PageLoader";
+import WorkSubmission from "./components/Contact/form";
 
 
 
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/label" element={<SouthCultLabel />} />
         <Route path="/collab" element={<Collab />} />
+        <Route path="/contact" element={<WorkSubmission />} />
       </Routes>
     </BrowserRouter>
   );
