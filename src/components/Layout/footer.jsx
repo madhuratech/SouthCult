@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <>
       {/* Desktop Footer */}
-      <footer className="hidden md:block w-full border-t border-white/10 bg-[#050505] px-8 py-4 font-clash text-white lg:px-12">
+     <footer className="sticky bottom-0 z-40 hidden w-full border-t border-white/10 bg-[#050505] px-8 py-4 font-clash text-white md:block lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="flex items-center justify-between">
             <div>

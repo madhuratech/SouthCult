@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger);
 const creations = [
     {
         number: "01",
-        title: "Music",
+        title: "Music Production",
         description:
-            "Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment.",
+            " Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment.",
         image:
             "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85",
     },
     {
         number: "02",
-        title: "Films",
+        title: "Podcast",
         description:
             "Stories developed from ideas and scripts, brought to life from concept to final frame.",
         image:
@@ -25,7 +25,7 @@ const creations = [
     },
     {
         number: "03",
-        title: "Music Videos",
+        title: "Documentary",
         description:
             "Turning sound into visual worlds through direction, cinematography, and storytelling.",
         image:
