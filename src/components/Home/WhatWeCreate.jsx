@@ -2,6 +2,10 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import Music from "../../assets/service/Music.jpg"
+import Documentary from "../../assets/service/Documentary.jpg"
+import Podcast from "../../assets/service/Podcast.jpg"
+
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -11,25 +15,22 @@ const creations = [
         number: "01",
         title: "Music Production",
         description:
-            " Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment. Original sounds, independent artists, and releases built to travel beyond the moment.",
-        image:
-            "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=85",
+            "SouthCult is dedicated to creating films and documentaries that amplify independent voices and overlooked stories. Through production, promotion, and distribution, we help filmmakers connect with audiences, preserve culture, inspire change, and build lasting creative legacies together.",
+        image:Music,
     },
     {
         number: "02",
-        title: "Podcast",
+        title: "Documentary",
         description:
-            "Stories developed from ideas and scripts, brought to life from concept to final frame.",
-        image:
-            "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1200&q=85",
+            "SouthCult creates independent documentaries that uncover untold stories, represent diverse voices, and highlight perspectives often overlooked by mainstream media. Through storytelling, production, and narratives, we connect audiences with real experiences that inspire understanding, awareness, and lasting impact.",
+        image:Documentary,
     },
     {
         number: "03",
-        title: "Documentary",
+        title: "Podcast",
         description:
-            "Turning sound into visual worlds through direction, cinematography, and storytelling.",
-        image:
-            "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1200&q=85",
+            "SouthCult creates podcasts that amplify authentic voices, meaningful conversations, and untold stories. From culture and music to social issues and creative journeys, our productions inform, inspire, and connect audiences through engaging audio experiences that spark ideas and build lasting communities together. ",
+        image:Podcast,
     },
 ];
 
@@ -528,10 +529,10 @@ export default function WhatWeCreate() {
                             tracking-[-0.06em]
                             text-white
                             md:text-[10vw]
-                            lg:text-[8.8rem]
+                            lg:text-[6.8rem]
                         "
                     >
-                        Not just content.
+                       Stories Become Impact
                     </h2>
 
                     {/* STATEMENT */}
@@ -547,19 +548,19 @@ export default function WhatWeCreate() {
                                 tracking-[-0.04em]
                                 text-white/80
                                 md:text-5xl
-                                lg:text-6xl
+                                lg:text-5xl
                             "
                         >
-                            We don't just make
+                           We transform creators into powerful voices
                             <br />
 
                             <span className="text-white/25">
-                                things.
+                                through.
                             </span>
 
                             <br />
 
-                            We make them matter.
+                           meaningful creative journeys together.
                         </h3>
                     </div>
                 </div>
@@ -745,7 +746,7 @@ export default function WhatWeCreate() {
                                                         tracking-[-0.055em]
                                                         md:text-[10vw]
                                                         md:leading-[0.9]
-                                                        lg:text-[8.2rem]
+                                                        lg:text-[6.2rem]
                                                         lg:leading-[0.9]
                                                     "
                                                 >
@@ -892,29 +893,6 @@ export default function WhatWeCreate() {
                                                 </span>
                                             </div>
 
-                                            {/* BOTTOM LABEL */}
-
-                                            <div
-                                                className="
-                                                    absolute
-                                                    bottom-5
-                                                    left-5
-                                                "
-                                            >
-                                                <span
-                                                    className="
-                                                        text-[8px]
-                                                        uppercase
-                                                        tracking-[0.35em]
-                                                        text-white/50
-                                                    "
-                                                >
-                                                    Frame /
-                                                    {
-                                                        creation.number
-                                                    }
-                                                </span>
-                                            </div>
 
                                             {/* CORNER MARK */}
 

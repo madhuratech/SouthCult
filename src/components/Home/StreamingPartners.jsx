@@ -60,8 +60,8 @@ export default function StreamingPartners() {
                     </h2>
 
                     <p className="mt-5 text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-                        Every SouthCult release is available across the leading music and
-                        video streaming platforms worldwide.
+                      SouthCult delivers music, podcasts, and visual stories through trusted streaming platforms,
+                        ensuring every creation reaches listeners and viewers worldwide.
                     </p>
                 </div>
 

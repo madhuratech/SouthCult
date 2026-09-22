@@ -87,9 +87,8 @@ export default function LatestRelease() {
                                 </div>
 
                                 <p className="text-zinc-400 leading-relaxed">
-                                    The debut release from SouthCult. A cinematic blend of emotion,
-                                    darkness and atmospheric storytelling that marks the beginning of our
-                                    musical journey.
+                                    The first chapter of SouthCult's creative journey, bringing together original music, authentic storytelling, 
+                                    and artistic expression to inspire audiences and celebrate independent talent.
                                 </p>
 
                                 <div className="flex flex-wrap gap-3 pt-2">

@@ -13,19 +13,18 @@ export default function Hero() {
 
                     <div className="max-w-6xl">
                         {/* Main heading */}
-                        <h2 className="font-serif text-5xl leading-[0.95] tracking-tight sm:text-6xl md:text-8xl lg:text-[110px]">
-                            South Indian Stories
+                        <h2 className="font-serif text-5xl leading-[0.95] tracking-tight sm:text-6xl md:text-8xl lg:text-[90px]">
+                            South India's Artists 
                             <br />
 
                             <span className="text-white/70">
-                                Become Music & Film
+                                Through Creative Excellence
                             </span>
                         </h2>
 
                         {/* Description */}
                         <p className="mx-auto font-clash mt-8 max-w-xl text-sm leading-7 text-white/55 md:text-base">
-                            We turn stories, ideas and sounds from the South
-                            into music and moving images.
+                            Developing artists through funding, production, protection, marketing, broadcasting, documentaries, podcasts, and concerts.
                         </p>
 
                         {/* CTA */}

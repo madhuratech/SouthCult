@@ -1,4 +1,6 @@
 import Open1000 from "../../assets/aayirum.png";
+import Open from "../../assets/Open.png";
+
 
 export default function UpcomingRelease() {
   return (
@@ -35,7 +37,11 @@ export default function UpcomingRelease() {
         <div className="max-w-7xl mx-auto px-6 py-20 sm:py-24">
           <div className="min-h-[280px] flex items-center justify-center">
             <h2 className="text-5xl sm:text-6xl md:text-8xl lg:text-[150px] font-clash font-black text-white uppercase leading-[0.85] tracking-[-0.04em] text-center inline-flex items-center gap-3 sm:gap-4 whitespace-nowrap">
-              <span>Open</span>
+              <img
+                src={Open}
+                alt="Open"
+                className="h-[1.1em] w-auto object-contain shrink-0"
+              />
 
               <img
                 src={Open1000}

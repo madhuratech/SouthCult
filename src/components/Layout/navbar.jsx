@@ -9,7 +9,7 @@ export default function Navbar() {
           <img
             src={Logo}
             alt="South Cult Logo"
-            className="h-12 w-auto md:h-16"
+            className="h-14 w-auto md:h-20"
           />
         </Link>
       </div>

@@ -57,12 +57,12 @@ Thanks!`);
             </p>
 
             <h2 className="max-w-xl text-4xl font-medium leading-[0.9] tracking-tight sm:text-5xl md:text-6xl">
+              Ready to create
+              <br />
               Something
               <br />
-              worth
-              <br />
               <span className="text-white/30">
-                creating?
+                Extraordinary?
               </span>
             </h2>
 
@@ -71,8 +71,7 @@ Thanks!`);
               <p className="max-w-sm text-xs leading-5 text-white/40">
                 Music. Film. Stories.
                 <br />
-                If you have something meaningful to create,
-                let's build it together.
+                Whether you're an artist, filmmaker, storyteller, or creator, SouthCult is here to help bring your vision to life.
               </p>
 
               <div className="mt-4 flex items-center gap-3">
@@ -114,8 +113,7 @@ Thanks!`);
                     </h3>
 
                     <p className="mt-2 max-w-md text-[11px] leading-5 text-white/35 transition-colors duration-500 group-hover:text-white/55">
-                      Let’s create, produce, release and grow
-                      your music together.
+                      Develop your music, protect your work, release globally, and grow your audience with SouthCult.
                     </p>
 
                   </div>
@@ -153,7 +151,7 @@ Thanks!`);
                   <div>
 
                     <p className="mb-1.5 text-[9px] uppercase tracking-[0.3em] text-white/35">
-                      Film & Story
+                     DOCUMENTARY
                     </p>
 
                     <h3 className="text-xl font-medium tracking-tight transition-transform duration-500 group-hover:translate-x-2 sm:text-2xl md:text-3xl">
@@ -161,8 +159,7 @@ Thanks!`);
                     </h3>
 
                     <p className="mt-2 max-w-md text-[11px] leading-5 text-white/35 transition-colors duration-500 group-hover:text-white/55">
-                      Have an idea, script or story?
-                      Let’s turn it into film.
+                      Turn powerful ideas into compelling documentaries that inspire, inform, and reach audiences everywhere.
                     </p>
 
                   </div>

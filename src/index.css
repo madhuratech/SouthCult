@@ -37,3 +37,12 @@
     opacity: 0;
   }
 }
+
+body {
+  cursor: none;
+}
+
+a,
+button {
+  cursor: none;
+}
