@@ -6,14 +6,14 @@ import Collab from "./pages/Collab";
 import PageLoader from "./components/Layout/PageLoader";
 import WorkSubmission from "./components/Contact/form";
 // import SmoothCursor from "./components/Layout/SmoothCursor";
-import SmoothScroll from "./components/Layout/SmoothScroll";
+// import SmoothScroll from "./components/Layout/SmoothScroll";
 
 
 
 function App() {
   return (
     <BrowserRouter>
-    <SmoothScroll/>
+    {/* <SmoothScroll/> */}
     {/* <SmoothCursor/> */}
       <PageLoader />
       <Routes>
