@@ -69,7 +69,7 @@ export default function CollaborationHero() {
                             <br />
 
                             <span className="text-white/25">
-                                Finds Its Home.
+                                Build Their Future.
 
                             </span>
                         </h1>
@@ -92,10 +92,9 @@ export default function CollaborationHero() {
                                 md:leading-8
                             "
                         >
-                            We partner with independent artists to bring
-                            South Indian music to a wider audience through
-                            thoughtful collaboration, global distribution
-                            and a transparent revenue-sharing model.
+                            SouthCult empowers independent artists, filmmakers, storytellers, and creators through artist development, 
+                            funding, production, marketing, broadcasting, and live experiences, helping original ideas grow into meaningful
+                            careers and lasting cultural impact.
                         </p>
 
                     </div>

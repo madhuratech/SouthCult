@@ -4,7 +4,7 @@ export default function LatestRelease() {
     return (
         <>
 
-         
+
             {/* SECTION 1 : Sticky Heading */}
             <section className="sticky top-0 h-[300px] sm:h-[360px] bg-[#050505] -mt-px flex items-center justify-end z-0 overflow-hidden">
                 <div className="w-full max-w-7xl mx-auto px-6">
@@ -22,8 +22,8 @@ export default function LatestRelease() {
                     sm:leading-[0.82]
                 "
                             style={{
-                                color: "transparent",
-                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                                color: "#be0707",
+                                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             LATEST
@@ -43,8 +43,8 @@ export default function LatestRelease() {
                     sm:mt-2
                 "
                             style={{
-                                color: "transparent",
-                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                                color: "#f4f4f4",
+                                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             RELEASE
@@ -53,7 +53,7 @@ export default function LatestRelease() {
                     </div>
                 </div>
             </section>
-            
+
 
             {/* SECTION 2 : Covers the sticky section */}
             <section className="relative z-10 bg-[#050505]">
@@ -67,7 +67,6 @@ export default function LatestRelease() {
                             <p className="text-xs uppercase tracking-[0.35em] text-zinc-500 mb-6">
                                 SouthCult • Debut Single
                             </p>
-
                             <h2 className="text-5xl font-clash md:text-7xl lg:text-8xl font-black leading-[0.9] text-white">
                                 STAYING
                             </h2>
@@ -87,7 +86,7 @@ export default function LatestRelease() {
                                 </div>
 
                                 <p className="text-zinc-400 leading-relaxed">
-                                    The first chapter of SouthCult's creative journey, bringing together original music, authentic storytelling, 
+                                    The first chapter of SouthCult's creative journey, bringing together original music, authentic storytelling,
                                     and artistic expression to inspire audiences and celebrate independent talent.
                                 </p>
 
@@ -117,7 +116,11 @@ export default function LatestRelease() {
                     </div>
 
                     {/* Spotify Player */}
-                    <div className="rounded-[28px] overflow-hidden border border-white/10 bg-zinc-950 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+                    <div
+                        onMouseEnter={() => window.dispatchEvent(new Event("cursor-hide"))}
+                        onMouseLeave={() => window.dispatchEvent(new Event("cursor-show"))}
+                        className="rounded-[28px] overflow-hidden border border-white/10 bg-zinc-950 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+                    >
                         <iframe
                             src="https://open.spotify.com/embed/track/7v1tMD4WPsGlqNJzZkADVr?utm_source=generator"
                             width="100%"
@@ -128,7 +131,6 @@ export default function LatestRelease() {
                             title="Staying Down - Spotify"
                         />
                     </div>
-
                 </div>
             </section>
         </>

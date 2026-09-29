@@ -65,11 +65,11 @@ export default function CollaborationHero() {
                                 xl:text-[5.2vw]
                             "
                         >
-                            Where Creators
+                            Where Great Ideas 
                             <br />
 
                             <span className="text-white/25">
-                                Become Collaborators.
+                                Find Their Creative Home
                             </span>
                         </h1>
 
@@ -91,9 +91,8 @@ export default function CollaborationHero() {
                                 md:leading-8
                             "
                         >
-                            We work with artists, filmmakers and storytellers
-                            to develop ideas, create meaningful work and build
-                            projects that can grow beyond their first release.
+                            We collaborate with artists, song creators, filmmakers, and storytellers to transform original ideas
+                            into meaningful projects that inspire audiences and create lasting impact.
                         </p>
 
                     </div>

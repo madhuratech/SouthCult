@@ -1,10 +1,32 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function SmoothCursor() {
   const cursorRef = useRef(null);
+  const [hidden, setHidden] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(true);
 
   useEffect(() => {
-    const pos = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const checkDevice = () => {
+      const touch =
+        "ontouchstart" in window ||
+        navigator.maxTouchPoints > 0 ||
+        navigator.msMaxTouchPoints > 0;
+
+      setIsTouchDevice(touch);
+    };
+
+    checkDevice();
+  }, []);
+
+  useEffect(() => {
+    // Never run custom cursor on touch devices
+    if (isTouchDevice) return;
+
+    const pos = {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2,
+    };
+
     const mouse = { ...pos };
 
     const move = (e) => {
@@ -12,17 +34,22 @@ export default function SmoothCursor() {
       mouse.y = e.clientY;
     };
 
+    const hide = () => setHidden(true);
+    const show = () => setHidden(false);
+
     window.addEventListener("mousemove", move);
+    window.addEventListener("cursor-hide", hide);
+    window.addEventListener("cursor-show", show);
 
     let raf;
 
     const animate = () => {
-      // smoother follow
-      pos.x += (mouse.x - pos.x) * 0.08;
-      pos.y += (mouse.y - pos.y) * 0.08;
+      pos.x += (mouse.x - pos.x) * 0.12;
+      pos.y += (mouse.y - pos.y) * 0.12;
 
       if (cursorRef.current) {
-        cursorRef.current.style.transform = `translate3d(${pos.x}px, ${pos.y}px, 0) translate(-50%, -50%)`;
+        cursorRef.current.style.transform =
+          `translate3d(${pos.x}px, ${pos.y}px, 0) translate(-50%, -50%)`;
       }
 
       raf = requestAnimationFrame(animate);
@@ -32,24 +59,26 @@ export default function SmoothCursor() {
 
     return () => {
       window.removeEventListener("mousemove", move);
+      window.removeEventListener("cursor-hide", hide);
+      window.removeEventListener("cursor-show", show);
       cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [isTouchDevice]);
+
+  // Don't render anything on mobile/touch devices
+  if (isTouchDevice) {
+    return null;
+  }
 
   return (
     <div
       ref={cursorRef}
-      className="pointer-events-none fixed left-0 top-0 z-[9999] h-7 w-7 rounded-full"
+      className="pointer-events-none fixed left-0 top-0 z-[9999] h-18 w-18 rounded-full transition-opacity duration-150"
       style={{
+        background: "#fff",
+        mixBlendMode: "difference",
         willChange: "transform",
-        backgroundImage:
-          "radial-gradient(circle, rgba(255,255,255,0.95) 1px, transparent 1.2px)",
-        backgroundSize: "4px 4px",
-        backgroundPosition: "center",
-        border: "1px solid rgba(255,255,255,0.12)",
-        boxShadow:
-          "0 0 18px rgba(255,255,255,0.12), inset 0 0 12px rgba(255,255,255,0.06)",
-        backdropFilter: "blur(2px)",
+        opacity: hidden ? 0 : 1,
       }}
     />
   );

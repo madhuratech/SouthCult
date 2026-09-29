@@ -157,17 +157,31 @@ export default function TraditionalVsSouthCult() {
               <div className="space-y-7">
                 <Feature
                   icon={<X size={15} strokeWidth={1.5} />}
-                  text="Pay upfront"
+                  text="Exclusive Contracts"
                 />
 
                 <Feature
                   icon={<X size={15} strokeWidth={1.5} />}
-                  text="Deliver project"
+                  text="Studio Ownership"
                 />
 
                 <Feature
                   icon={<X size={15} strokeWidth={1.5} />}
-                  text="Relationship ends"
+                  text="Fixed Process"
+                  muted
+                />
+
+
+                <Feature
+                  icon={<X size={15} strokeWidth={1.5} />}
+                  text="One-Time Release"
+                  muted
+                />
+
+
+                <Feature
+                  icon={<X size={15} strokeWidth={1.5} />}
+                  text="Limited Support"
                   muted
                 />
               </div>
@@ -175,8 +189,7 @@ export default function TraditionalVsSouthCult() {
               {/* Bottom text */}
               <div className="mt-auto pt-10">
                 <p className="max-w-sm text-sm leading-relaxed text-white/30">
-                  A transaction. The project is delivered, the payment is
-                  complete, and the relationship ends.
+                  Artists release under studio-controlled agreements with predefined ownership, revenue, and creative terms.
                 </p>
               </div>
             </div>
@@ -214,7 +227,12 @@ export default function TraditionalVsSouthCult() {
               <div className="space-y-7">
                 <Feature
                   icon={<Check size={15} strokeWidth={1.5} />}
-                  text="We invest"
+                  text="We discover talent"
+                />
+
+                <Feature
+                  icon={<Check size={15} strokeWidth={1.5} />}
+                  text="We invest together"
                 />
 
                 <Feature
@@ -225,8 +243,8 @@ export default function TraditionalVsSouthCult() {
                 <Feature
                   icon={<Check size={15} strokeWidth={1.5} />}
                   text="Revenue is shared"
+                  strong
                 />
-
                 <Feature
                   icon={<Check size={15} strokeWidth={1.5} />}
                   text="Long-term partnership"
@@ -236,19 +254,18 @@ export default function TraditionalVsSouthCult() {
 
               <div className="mt-auto pt-10">
                 <p className="max-w-sm text-sm leading-relaxed text-white/55">
-                  Not just a service. We put our resources behind the work and
-                  grow with the artist.
+                  Creators collaborate, share revenue transparently, and grow through long-term partnerships with SouthCult.
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-       
-     
+
+
       </div>
 
-      
+
     </section>
   );
 }
@@ -256,18 +273,16 @@ export default function TraditionalVsSouthCult() {
 function Feature({ icon, text, muted, strong }) {
   return (
     <div
-      className={`flex items-center gap-4 ${
-        muted ? "text-white/30" : "text-white/75"
-      }`}
+      className={`flex items-center gap-4 ${muted ? "text-white/30" : "text-white/75"
+        }`}
     >
       <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/15">
         {icon}
       </span>
 
       <span
-        className={`text-sm tracking-wide ${
-          strong ? "font-medium text-white" : "font-light"
-        }`}
+        className={`text-sm tracking-wide ${strong ? "font-medium text-white" : "font-light"
+          }`}
       >
         {text}
       </span>

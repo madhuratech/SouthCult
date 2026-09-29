@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowUpRight, Music2 } from "lucide-react";
+import { ArrowUpRight, CircleHelp } from "lucide-react";
 
 import Marabu from "../../assets/Marabu.webp";
 import barath from "../../assets/ymc.webp";
@@ -39,8 +39,8 @@ export default function OurArtists() {
                                 sm:leading-[0.82]
                             "
                             style={{
-                                color: "transparent",
-                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                                color: "#f4f4f4",
+                                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             OUR
@@ -60,8 +60,8 @@ export default function OurArtists() {
                                 sm:mt-2
                             "
                             style={{
-                                color: "transparent",
-                                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                                color: "#be0707",
+                                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
                             }}
                         >
                             ARTISTS
@@ -102,7 +102,7 @@ export default function OurArtists() {
                                 </h3>
 
                                 <div className="mt-4 flex items-center gap-2 text-white text-sm">
-                                    <Music2 size={16} />
+                                    <CircleHelp size={16} />
                                     Spotify
                                     <ArrowUpRight size={15} />
                                 </div>
@@ -134,7 +134,7 @@ export default function OurArtists() {
                                 </h3>
 
                                 <div className="mt-4 flex items-center gap-2 text-white text-sm">
-                                    <Music2 size={16} />
+                                    <CircleHelp size={16} />
                                     Spotify
                                     <ArrowUpRight size={15} />
                                 </div>
@@ -145,7 +145,7 @@ export default function OurArtists() {
                         <div className="relative rounded-[28px] border border-dashed border-white/20 bg-zinc-950 flex flex-col items-center justify-center h-[420px] text-center p-8">
 
                             <div className="mt-8 w-20 h-20 rounded-full border border-white/10 flex items-center justify-center">
-                                <Music2 size={34} className="text-white" />
+                                <CircleHelp size={70} className="text-white" />
                             </div>
 
                             <p className="mt-8 text-white uppercase tracking-[0.3em] text-xs">

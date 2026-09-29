@@ -108,7 +108,7 @@ Thanks!`);
                       Music
                     </p>
 
-                    <h3 className="text-xl font-medium tracking-tight transition-transform duration-500 group-hover:translate-x-2 sm:text-2xl md:text-3xl">
+                    <h3 className="text-xl font-medium  transition-transform duration-500 group-hover:translate-x-2 sm:text-2xl md:text-3xl">
                       I'm an Artist
                     </h3>
 
@@ -154,7 +154,7 @@ Thanks!`);
                      DOCUMENTARY
                     </p>
 
-                    <h3 className="text-xl font-medium tracking-tight transition-transform duration-500 group-hover:translate-x-2 sm:text-2xl md:text-3xl">
+                    <h3 className="text-xl font-medium  transition-transform duration-500 group-hover:translate-x-2 sm:text-2xl md:text-3xl">
                       I Have a Story
                     </h3>
 

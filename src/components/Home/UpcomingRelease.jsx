@@ -12,8 +12,8 @@ export default function UpcomingRelease() {
             <h1
               className="text-[52px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase leading-[0.9] sm:leading-[0.82]"
               style={{
-                color: "transparent",
-                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                color: "#be0707",
+                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
               }}
             >
               UPCOMING
@@ -22,8 +22,8 @@ export default function UpcomingRelease() {
             <h1
               className="text-[52px] sm:text-[80px] md:text-[120px] lg:text-[150px] font-black uppercase leading-[0.9] sm:leading-[0.82] mt-1 sm:mt-2"
               style={{
-                color: "transparent",
-                WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
+                color: "#f4f4f4",
+                // WebkitTextStroke: "1.5px rgba(255,255,255,0.15)",
               }}
             >
               RELEASE
@@ -33,7 +33,7 @@ export default function UpcomingRelease() {
       </section>
 
       {/* SECTION 2 */}
-      <section className="relative z-10 bg-[#050505]">
+   <section className="relative z-10 bg-[#050505]">
         <div className="max-w-7xl mx-auto px-6 py-20 sm:py-24">
           <div className="min-h-[280px] flex items-center justify-center">
             <h2 className="text-5xl sm:text-6xl md:text-8xl lg:text-[150px] font-clash font-black text-white uppercase leading-[0.85] tracking-[-0.04em] text-center inline-flex items-center gap-3 sm:gap-4 whitespace-nowrap">
@@ -43,11 +43,9 @@ export default function UpcomingRelease() {
                 className="h-[1.1em] w-auto object-contain shrink-0"
               />
 
-              <img
-                src={Open1000}
-                alt="1000"
-                className="h-[1.8em] w-auto object-contain shrink-0"
-              />
+              <span className="text-white font-black tracking-[0.01em]">
+                1000
+              </span>
             </h2>
           </div>
         </div>

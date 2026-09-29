@@ -80,21 +80,21 @@ export default function TransparentRevenue() {
         <div className="revenue-header mb-28">
 
           <p className="mb-6 text-[10px] uppercase tracking-[0.45em] text-white/30">
-            Transparent Revenue
+            Transparent Agreements.
           </p>
 
           <h2 className="max-w-5xl text-5xl font-light leading-[0.9] tracking-[-0.055em] sm:text-6xl md:text-7xl lg:text-[7rem]">
             Clear terms.
             <br />
             <span className="text-white/25">
-              Shared success.
+              Fair Revenue.
             </span>
           </h2>
 
           <p className="mt-10 max-w-xl text-sm font-light leading-relaxed text-white/40 sm:text-base">
-            Every release has a clear agreement. Revenue generated from
-            streaming and monetization is shared according to the signed
-            collaboration.
+            Every project begins with a clear and transparent agreement. Revenue earned through streaming, licensing,
+            and monetisation is shared based on the mutually signed collaboration, ensuring fairness, trust, and long-term partnerships.
+
           </p>
         </div>
 
@@ -108,21 +108,21 @@ export default function TransparentRevenue() {
           <RevenueItem
             number="01"
             title="Agreement"
-            description="Every collaboration begins with clear terms agreed upon before the release."
+            description="Every release begins with a clear, transparent agreement. Rights, responsibilities, and expectations are defined before we create together."
           />
 
           {/* Step 02 */}
           <RevenueItem
             number="02"
             title="Release"
-            description="The finished work is distributed and made available across the agreed platforms."
+            description="We plan, publish, and promote every release together. Our team supports creators from launch to audience reach. "
           />
 
           {/* Step 03 */}
           <RevenueItem
             number="03"
             title="Revenue"
-            description="Streaming and monetization generate revenue that is shared according to the signed collaboration."
+            description="Revenue is shared fairly according to the signed agreement. Creators receive transparent earnings with long-term partnership opportunities."
           />
 
         </div>

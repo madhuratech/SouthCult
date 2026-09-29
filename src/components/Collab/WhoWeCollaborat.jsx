@@ -6,25 +6,25 @@ const collaborators = [
         number: "01",
         title: "Artists",
         description:
-            "Independent singers, musicians and composers looking to develop and release their work.",
+            "Whether you're an emerging or established artist, SouthCult provides the platform, support, and opportunities to create original music, grow your audience, and build a sustainable creative career.",
     },
     {
         number: "02",
         title: "Song Creators",
         description:
-            "Creators with finished or developing songs who need a label, distribution and a long-term partner.",
+            "Songwriters, lyricists, and composers with original ideas looking for production, protection, releases, and audience growth.",
     },
     {
         number: "03",
         title: "Filmmakers",
         description:
-            "Filmmakers and directors with stories, scripts or concepts that deserve to be brought to life.",
+            "Bring your vision to life with SouthCult. We collaborate with independent filmmakers to develop, produce, and distribute compelling films and documentaries that connect with audiences and create lasting impact.",
     },
     {
         number: "04",
         title: "Storytellers",
         description:
-            "Creators with original ideas for documentaries, films and visual stories.",
+            "Every story deserves to be heard. SouthCult partners with storytellers to transform original ideas into meaningful documentaries, podcasts, films, and creative productions that inspire and engage audiences..",
     },
 ];
 
@@ -69,10 +69,10 @@ export default function WhoWeCollaborate() {
                                 lg:text-[5vw]
                             "
                         >
-                            Different Voices.
+                            Many Creators.
                             <br />
                             <span className="text-white/25">
-                                One Creative Space.
+                                One Vision.
                             </span>
                         </h2>
 

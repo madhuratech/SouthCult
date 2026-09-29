@@ -1,7 +1,8 @@
 import { useRef, useState } from "react";
 import { Upload, ArrowUpRight } from "lucide-react";
 
-const API_URL = "http://localhost:5000/api/submissions";
+// const API_URL = "http://localhost:5000/api/submissions";
+const API_URL = "https://api.southcult.com/api/submissions";
 
 const MAX_FILE_SIZE = 500 * 1024 * 1024;
 
@@ -9,7 +10,6 @@ const ALLOWED_EXTENSIONS = [
   "wav",
   "mp3",
   "mp4",
-  "m4a",
   "mov",
   "pdf",
   "docx",
@@ -20,7 +20,6 @@ const ALLOWED_MIME_TYPES = [
   "audio/x-wav",
   "audio/mpeg",
   "video/mp4",
-  "audio/m4a",
   "video/quicktime",
   "application/pdf",
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
@@ -480,7 +479,7 @@ export default function WorkSubmission() {
                 ref={fileInputRef}
                 type="file"
                 name="file"
-                accept=".wav,.mp3,.m4a,.mp4,.mov,.pdf,.docx"
+                accept=".wav,.mp3,.mp4,.mov,.pdf,.docx"
                 onChange={handleChange}
                 className="hidden"
               />

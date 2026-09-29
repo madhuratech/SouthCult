@@ -38,6 +38,12 @@ export default function Footer() {
               >
                 Collaboration
               </a>
+               <a
+                href="/contact"
+                className="text-[9px] uppercase tracking-[0.15em] hover:text-white/60 transition"
+              >
+                Contact
+              </a>
             </nav>
           </div>
 
@@ -101,6 +107,13 @@ export default function Footer() {
                 className="text-[10px] uppercase tracking-[0.15em]"
               >
                 Collaboration
+              </a>
+
+               <a
+                href="/contact"
+                className="text-[10px] uppercase tracking-[0.15em]"
+              >
+                Contact
               </a>
             </nav>
 

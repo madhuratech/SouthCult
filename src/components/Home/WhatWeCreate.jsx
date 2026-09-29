@@ -16,21 +16,21 @@ const creations = [
         title: "Music Production",
         description:
             "SouthCult is dedicated to creating films and documentaries that amplify independent voices and overlooked stories. Through production, promotion, and distribution, we help filmmakers connect with audiences, preserve culture, inspire change, and build lasting creative legacies together.",
-        image:Music,
+        image: Music,
     },
     {
         number: "02",
         title: "Documentary",
         description:
             "SouthCult creates independent documentaries that uncover untold stories, represent diverse voices, and highlight perspectives often overlooked by mainstream media. Through storytelling, production, and narratives, we connect audiences with real experiences that inspire understanding, awareness, and lasting impact.",
-        image:Documentary,
+        image: Documentary,
     },
     {
         number: "03",
         title: "Podcast",
         description:
             "SouthCult creates podcasts that amplify authentic voices, meaningful conversations, and untold stories. From culture and music to social issues and creative journeys, our productions inform, inspire, and connect audiences through engaging audio experiences that spark ideas and build lasting communities together. ",
-        image:Podcast,
+        image: Podcast,
     },
 ];
 
@@ -407,15 +407,15 @@ export default function WhatWeCreate() {
                         Math.min(
                             1,
                             progress *
-                                (scrollDistance /
-                                    creationScroll)
+                            (scrollDistance /
+                                creationScroll)
                         );
 
                     const index = Math.min(
                         creations.length - 1,
                         Math.floor(
                             creationProgress *
-                                creations.length
+                            creations.length
                         )
                     );
 
@@ -532,7 +532,7 @@ export default function WhatWeCreate() {
                             lg:text-[6.8rem]
                         "
                     >
-                       Stories Become Impact
+                        Stories Become Impact
                     </h2>
 
                     {/* STATEMENT */}
@@ -551,7 +551,7 @@ export default function WhatWeCreate() {
                                 lg:text-5xl
                             "
                         >
-                           We transform creators into powerful voices
+                            We transform creators into powerful voices
                             <br />
 
                             <span className="text-white/25">
@@ -560,7 +560,7 @@ export default function WhatWeCreate() {
 
                             <br />
 
-                           meaningful creative journeys together.
+                            meaningful creative journeys together.
                         </h3>
                     </div>
                 </div>
@@ -573,24 +573,25 @@ export default function WhatWeCreate() {
             <div
                 ref={stageRef}
                 className="
-                    relative
-                    h-[72vh]
-                    min-h-[520px]
-                    w-full
-                    overflow-hidden
-                    md:h-[70vh]
-                    md:min-h-[560px]
-                "
+  relative
+  h-[850px]
+  min-h-[850px]
+  w-full
+  overflow-hidden
+  md:h-[70vh]
+  md:min-h-[560px]
+"
             >
                 <div
                     className="
-                        creation-stage-inner
-                        relative
-                        flex
-                        h-full
-                        w-full
-                        items-center
-                    "
+  creation-stage-inner
+  relative
+  flex
+  h-full
+  w-full
+  items-start
+  md:items-center
+"
                 >
                     {/* ==================================
                         LEFT SIDE PROGRESS
@@ -665,12 +666,13 @@ export default function WhatWeCreate() {
                     >
                         <div
                             className="
-                                relative
-                                flex
-                                min-h-[440px]
-                                items-center
-                                md:min-h-[500px]
-                            "
+        relative
+        flex
+        min-h-[820px]
+        items-start
+        md:min-h-[500px]
+        md:items-center
+    "
                         >
                             {creations.map(
                                 (
@@ -687,12 +689,16 @@ export default function WhatWeCreate() {
                                             ] = el;
                                         }}
                                         className="
-                                            creation-item
-                                            absolute
-                                            inset-0
-                                            flex
-                                            items-center
-                                        "
+  creation-item
+  absolute
+  inset-0
+  flex
+  flex-col
+  items-start
+  justify-start
+  md:flex-row
+  md:items-center
+"
                                     >
                                         {/* ==================================
                                             LEFT CONTENT
@@ -700,12 +706,12 @@ export default function WhatWeCreate() {
 
                                         <div
                                             className="
-                                                w-full
-                                                pr-0
-                                                md:w-[58%]
-                                                md:pr-10
-                                                lg:w-[60%]
-                                            "
+  w-full
+  pr-0
+  md:w-[58%]
+  md:pr-10
+  lg:w-[60%]
+"
                                         >
                                             {/* NUMBER */}
 
@@ -815,99 +821,49 @@ export default function WhatWeCreate() {
                                         {/* ==================================
                                             RIGHT IMAGE
                                         ================================== */}
-
                                         <div
                                             className="
-                                                absolute
-                                                right-0
-                                                top-1/2
-                                                hidden
-                                                h-[58vh]
-                                                w-[36%]
-                                                -translate-y-1/2
-                                                overflow-hidden
-                                                md:block
-                                                lg:w-[38%]
-                                            "
+    relative
+    mt-10
+    h-[420vh]
+    w-full
+    overflow-hidden
+    md:absolute
+    md:right-0
+    md:top-1/2
+    md:mt-0
+    md:h-[58vh]
+    md:w-[36%]
+    md:-translate-y-1/2
+    lg:w-[38%]
+  "
                                         >
+
                                             <img
                                                 ref={(el) => {
-                                                    imageRefs.current[
-                                                        index
-                                                    ] = el;
+                                                    imageRefs.current[index] = el;
                                                 }}
-                                                src={
-                                                    creation.image
-                                                }
-                                                alt={
-                                                    creation.title
-                                                }
+                                                src={creation.image}
+                                                alt={creation.title}
                                                 className="
-                                                    h-full
-                                                    w-full
-                                                    object-cover
-                                                    grayscale
-                                                    opacity-90
-                                                "
+      h-full
+      w-full
+      object-cover
+      opacity-90
+    "
                                             />
 
-                                            {/* DARK OVERLAY */}
+                                            <div className="absolute inset-0 bg-black/20" />
 
-                                            <div
-                                                className="
-                                                    absolute
-                                                    inset-0
-                                                    bg-black/20
-                                                "
-                                            />
+                                            <div className="absolute inset-0 border border-white/10" />
 
-                                            {/* CINEMATIC BORDER */}
-
-                                            <div
-                                                className="
-                                                    absolute
-                                                    inset-0
-                                                    border
-                                                    border-white/10
-                                                "
-                                            />
-
-                                            {/* TOP LABEL */}
-
-                                            <div
-                                                className="
-                                                    absolute
-                                                    left-5
-                                                    top-5
-                                                "
-                                            >
-                                                <span
-                                                    className="
-                                                        text-[8px]
-                                                        uppercase
-                                                        tracking-[0.35em]
-                                                        text-white/50
-                                                    "
-                                                >
+                                            <div className="absolute left-5 top-5">
+                                                <span className="text-[8px] uppercase tracking-[0.35em] text-white/50">
                                                     South Cult
                                                 </span>
                                             </div>
 
-
-                                            {/* CORNER MARK */}
-
-                                            <div
-                                                className="
-                                                    absolute
-                                                    bottom-5
-                                                    right-5
-                                                    h-5
-                                                    w-5
-                                                    border-b
-                                                    border-r
-                                                    border-white/30
-                                                "
-                                            />
+                                            <div className="absolute bottom-5 right-5 h-5 w-5 border-b border-r border-white/30" />
                                         </div>
                                     </div>
                                 )
