@@ -136,20 +136,27 @@ export default function FAQ() {
   };
 
   return (
-    <section className="bg-[#050505] px-5 py-24 font-clash text-white sm:px-8 md:px-12 lg:px-20 lg:py-32">
-      <div className="mx-auto max-w-6xl">
+    <section className="bg-[#050505] px-4 py-20 font-clash text-white sm:px-6 sm:py-24 md:px-10 lg:px-16 xl:px-20">
+      <div className="mx-auto w-full max-w-6xl">
 
-        {/* =====================================================
-            HEADER
-        ====================================================== */}
-        <div className="mb-16 grid gap-10 md:grid-cols-2 md:items-end lg:mb-20">
-
-          <div>
-            <p className="mb-6 text-[10px] font-medium uppercase tracking-[0.45em] text-white/35">
+        {/* ================= HEADER ================= */}
+        <div className="mb-12 sm:mb-16 md:mb-20">
+          <div className="max-w-3xl">
+            <p className="mb-5 text-[9px] font-medium uppercase tracking-[0.35em] text-white/35 sm:mb-6 sm:text-[10px] sm:tracking-[0.45em]">
               South Cult / FAQ
             </p>
 
-            <h2 className="text-5xl font-light leading-[0.9] tracking-[-0.055em] sm:text-6xl md:text-7xl">
+            <h2
+              className="
+                text-[42px]
+                font-light
+                leading-[0.92]
+                tracking-[-0.055em]
+                sm:text-5xl
+                md:text-6xl
+                lg:text-7xl
+              "
+            >
               Questions
               <br />
               <span className="text-white/30">
@@ -157,15 +164,10 @@ export default function FAQ() {
               </span>
             </h2>
           </div>
-
-
         </div>
 
-        {/* =====================================================
-            CATEGORY TABS
-        ====================================================== */}
-        <div className="mb-16 border-y border-white/10">
-
+        {/* ================= CATEGORY TABS ================= */}
+        <div className="mb-12 border-y border-white/10 sm:mb-16">
           <div className="grid grid-cols-3">
 
             {Object.entries(faqData).map(([key, category]) => {
@@ -176,33 +178,82 @@ export default function FAQ() {
                   key={key}
                   type="button"
                   onClick={() => changeTab(key)}
-                  className={`group relative min-w-0 px-2 py-6 text-left transition-all duration-300 sm:px-5 sm:py-7 ${isActive
-                    ? "text-white"
-                    : "text-white/30 hover:text-white/70"
-                    }`}
+                  className={`
+                    group
+                    relative
+                    min-w-0
+                    overflow-hidden
+                    px-1.5
+                    py-5
+                    text-left
+                    transition-all
+                    duration-300
+                    sm:px-3
+                    sm:py-6
+                    md:px-5
+                    md:py-7
+                    ${
+                      isActive
+                        ? "text-white"
+                        : "text-white/30 hover:text-white/70"
+                    }
+                  `}
                 >
-
-                  <div className="flex items-start gap-3 sm:gap-5">
+                  <div className="flex min-w-0 items-start gap-2 sm:gap-3 md:gap-5">
 
                     <span
-                      className={`pt-1 text-[9px] tracking-[0.2em] transition-colors duration-300 sm:text-[10px] ${isActive
-                        ? "text-white/70"
-                        : "text-white/20"
-                        }`}
+                      className={`
+                        shrink-0
+                        pt-0.5
+                        text-[8px]
+                        tracking-[0.15em]
+                        transition-colors
+                        duration-300
+                        sm:text-[9px]
+                        md:text-[10px]
+                        ${
+                          isActive
+                            ? "text-white/70"
+                            : "text-white/20"
+                        }
+                      `}
                     >
                       {category.number}
                     </span>
 
-                    <span className="text-[12px] font-medium uppercase tracking-[0.08em] sm:text-[15px] sm:tracking-[0.12em]">
+                    <span
+                      className="
+                        min-w-0
+                        text-[9px]
+                        font-medium
+                        uppercase
+                        leading-tight
+                        tracking-[0.04em]
+                        sm:text-[11px]
+                        sm:tracking-[0.08em]
+                        md:text-[15px]
+                        md:tracking-[0.12em]
+                      "
+                    >
                       {category.label}
                     </span>
-
                   </div>
 
-                  {/* Active indicator */}
                   <span
-                    className={`absolute bottom-[-1px] left-0 h-[2px] bg-white transition-all duration-500 ${isActive ? "w-full" : "w-0"
-                      }`}
+                    className={`
+                      absolute
+                      bottom-[-1px]
+                      left-0
+                      h-[2px]
+                      bg-white
+                      transition-all
+                      duration-500
+                      ${
+                        isActive
+                          ? "w-full"
+                          : "w-0"
+                      }
+                    `}
                   />
                 </button>
               );
@@ -211,28 +262,53 @@ export default function FAQ() {
           </div>
         </div>
 
-        {/* =====================================================
-            ACTIVE CATEGORY INTRO
-        ====================================================== */}
-        <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
-
-          <div>
-
-
-            <h3 className="text-3xl font-light tracking-[-0.04em] sm:text-4xl">
+        {/* ================= CATEGORY INTRO ================= */}
+        <div
+          className="
+            mb-10
+            flex
+            flex-col
+            gap-5
+            sm:mb-12
+            sm:gap-6
+            md:flex-row
+            md:items-end
+            md:justify-between
+          "
+        >
+          <div className="min-w-0">
+            <h3
+              className="
+                text-[28px]
+                font-light
+                leading-none
+                tracking-[-0.04em]
+                sm:text-3xl
+                md:text-4xl
+              "
+            >
               {currentCategory.label}
             </h3>
           </div>
 
-          <p className="max-w-md text-[13px] leading-6 text-white/35 sm:text-right">
+          <p
+            className="
+              max-w-md
+              text-[12px]
+              leading-6
+              text-white/35
+              sm:text-[13px]
+              md:text-right
+            "
+          >
             {currentCategory.description}
           </p>
-
         </div>
-        {/* ================= FAQ GRID ================= */}
-        <div className="grid gap-x-14 md:grid-cols-2">
 
-          {/* LEFT COLUMN */}
+        {/* ================= FAQ GRID ================= */}
+        <div className="grid grid-cols-1 gap-x-10 md:grid-cols-2 md:gap-x-12 lg:gap-x-16">
+
+          {/* ================= LEFT COLUMN ================= */}
           <div className="flex flex-col">
             {currentCategory.faqs
               .filter((_, index) => index % 2 === 0)
@@ -249,42 +325,118 @@ export default function FAQ() {
                       type="button"
                       onClick={() => toggleFaq(actualIndex)}
                       aria-expanded={isOpen}
-                      className="group flex w-full items-center gap-5 py-8 text-left"
+                      className="
+                        group
+                        flex
+                        w-full
+                        items-center
+                        gap-3
+                        py-6
+                        text-left
+                        sm:gap-4
+                        sm:py-7
+                        md:gap-5
+                        md:py-8
+                      "
                     >
-                      <span className="w-8 shrink-0 text-[10px] tracking-[0.2em] text-white/30">
+                      {/* NUMBER */}
+                      <span
+                        className="
+                          w-6
+                          shrink-0
+                          text-[9px]
+                          tracking-[0.15em]
+                          text-white/30
+                          sm:w-8
+                          sm:text-[10px]
+                          sm:tracking-[0.2em]
+                        "
+                      >
                         0{actualIndex + 1}
                       </span>
 
+                      {/* QUESTION */}
                       <span
-                        className={`flex-1 text-lg tracking-tight transition-colors duration-300 sm:text-xl ${isOpen
-                            ? "text-white"
-                            : "text-white/70 group-hover:text-white"
-                          }`}
+                        className={`
+                          min-w-0
+                          flex-1
+                          pr-1
+                          text-[15px]
+                          leading-snug
+                          tracking-tight
+                          transition-colors
+                          duration-300
+                          sm:text-lg
+                          md:text-xl
+                          ${
+                            isOpen
+                              ? "text-white"
+                              : "text-white/70 group-hover:text-white"
+                          }
+                        `}
                       >
                         {faq.question}
                       </span>
 
+                      {/* ICON */}
                       <span
-                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all duration-500 ${isOpen
-                            ? "rotate-45 border-white bg-white text-black"
-                            : "border-white/20 text-white/50 group-hover:border-white/50"
-                          }`}
+                        className={`
+                          flex
+                          h-8
+                          w-8
+                          shrink-0
+                          items-center
+                          justify-center
+                          rounded-full
+                          border
+                          transition-all
+                          duration-500
+                          sm:h-9
+                          sm:w-9
+                          ${
+                            isOpen
+                              ? "rotate-45 border-white bg-white text-black"
+                              : "border-white/20 text-white/50 group-hover:border-white/50"
+                          }
+                        `}
                       >
                         <ArrowDownRight
-                          size={15}
+                          size={14}
                           strokeWidth={1.3}
                         />
                       </span>
                     </button>
 
+                    {/* ANSWER */}
                     <div
-                      className={`grid transition-all duration-500 ease-in-out ${isOpen
-                          ? "grid-rows-[1fr] opacity-100"
-                          : "grid-rows-[0fr] opacity-0"
-                        }`}
+                      className={`
+                        grid
+                        transition-all
+                        duration-500
+                        ease-in-out
+                        ${
+                          isOpen
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
+                        }
+                      `}
                     >
                       <div className="overflow-hidden">
-                        <p className="pb-8 pl-[52px] pr-6 text-[14px] leading-7 text-white/40">
+                        <p
+                          className="
+                            pb-6
+                            pl-9
+                            pr-2
+                            text-[12px]
+                            leading-6
+                            text-white/40
+                            sm:pb-7
+                            sm:pl-12
+                            sm:pr-6
+                            sm:text-[14px]
+                            sm:leading-7
+                          "
+                        >
                           {faq.answer}
                         </p>
                       </div>
@@ -294,7 +446,7 @@ export default function FAQ() {
               })}
           </div>
 
-          {/* RIGHT COLUMN */}
+          {/* ================= RIGHT COLUMN ================= */}
           <div className="flex flex-col">
             {currentCategory.faqs
               .filter((_, index) => index % 2 === 1)
@@ -311,42 +463,118 @@ export default function FAQ() {
                       type="button"
                       onClick={() => toggleFaq(actualIndex)}
                       aria-expanded={isOpen}
-                      className="group flex w-full items-center gap-5 py-8 text-left"
+                      className="
+                        group
+                        flex
+                        w-full
+                        items-center
+                        gap-3
+                        py-6
+                        text-left
+                        sm:gap-4
+                        sm:py-7
+                        md:gap-5
+                        md:py-8
+                      "
                     >
-                      <span className="w-8 shrink-0 text-[10px] tracking-[0.2em] text-white/30">
+                      {/* NUMBER */}
+                      <span
+                        className="
+                          w-6
+                          shrink-0
+                          text-[9px]
+                          tracking-[0.15em]
+                          text-white/30
+                          sm:w-8
+                          sm:text-[10px]
+                          sm:tracking-[0.2em]
+                        "
+                      >
                         0{actualIndex + 1}
                       </span>
 
+                      {/* QUESTION */}
                       <span
-                        className={`flex-1 text-lg tracking-tight transition-colors duration-300 sm:text-xl ${isOpen
-                            ? "text-white"
-                            : "text-white/70 group-hover:text-white"
-                          }`}
+                        className={`
+                          min-w-0
+                          flex-1
+                          pr-1
+                          text-[15px]
+                          leading-snug
+                          tracking-tight
+                          transition-colors
+                          duration-300
+                          sm:text-lg
+                          md:text-xl
+                          ${
+                            isOpen
+                              ? "text-white"
+                              : "text-white/70 group-hover:text-white"
+                          }
+                        `}
                       >
                         {faq.question}
                       </span>
 
+                      {/* ICON */}
                       <span
-                        className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all duration-500 ${isOpen
-                            ? "rotate-45 border-white bg-white text-black"
-                            : "border-white/20 text-white/50 group-hover:border-white/50"
-                          }`}
+                        className={`
+                          flex
+                          h-8
+                          w-8
+                          shrink-0
+                          items-center
+                          justify-center
+                          rounded-full
+                          border
+                          transition-all
+                          duration-500
+                          sm:h-9
+                          sm:w-9
+                          ${
+                            isOpen
+                              ? "rotate-45 border-white bg-white text-black"
+                              : "border-white/20 text-white/50 group-hover:border-white/50"
+                          }
+                        `}
                       >
                         <ArrowDownRight
-                          size={15}
+                          size={14}
                           strokeWidth={1.3}
                         />
                       </span>
                     </button>
 
+                    {/* ANSWER */}
                     <div
-                      className={`grid transition-all duration-500 ease-in-out ${isOpen
-                          ? "grid-rows-[1fr] opacity-100"
-                          : "grid-rows-[0fr] opacity-0"
-                        }`}
+                      className={`
+                        grid
+                        transition-all
+                        duration-500
+                        ease-in-out
+                        ${
+                          isOpen
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
+                        }
+                      `}
                     >
                       <div className="overflow-hidden">
-                        <p className="pb-8 pl-[52px] pr-6 text-[14px] leading-7 text-white/40">
+                        <p
+                          className="
+                            pb-6
+                            pl-9
+                            pr-2
+                            text-[12px]
+                            leading-6
+                            text-white/40
+                            sm:pb-7
+                            sm:pl-12
+                            sm:pr-6
+                            sm:text-[14px]
+                            sm:leading-7
+                          "
+                        >
                           {faq.answer}
                         </p>
                       </div>
@@ -355,20 +583,29 @@ export default function FAQ() {
                 );
               })}
           </div>
-
         </div>
 
-        {/* =====================================================
-            FOOTER
-        ====================================================== */}
-        <div className="mt-10 flex flex-col justify-between gap-3 text-[9px] uppercase tracking-[0.3em] text-white/20 sm:flex-row">
+        {/* ================= FOOTER ================= */}
+        <div
+          className="
+            mt-10
+            flex
+            flex-col
+            gap-3
+            text-[8px]
+            uppercase
+            tracking-[0.25em]
+            text-white/20
+            sm:flex-row
+            sm:justify-between
+            sm:text-[9px]
+            sm:tracking-[0.3em]
+          "
+        >
           <span>South Cult</span>
 
-          <span>
-            Clear terms / Long-term collaboration
-          </span>
+          <span>Clear terms / Long-term collaboration</span>
         </div>
-
       </div>
     </section>
   );

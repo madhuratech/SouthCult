@@ -528,7 +528,7 @@ export default function WorkSubmission() {
           </button>
 
           <p className="text-center text-xs text-white/35">
-            We usually respond within 2–3 weeks.
+            We usually respond within 2–3 days.
           </p>
 
         </form>
