@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import Music from "../../assets/service/Music.jpg"
-import Documentary from "../../assets/service/Documentary.jpg"
-import Podcast from "../../assets/service/Podcast.jpg"
+import Music from "../../assets/service/Music.jpeg"
+import Documentary from "../../assets/service/Documentary.jpeg"
+import Podcast from "../../assets/service/Podcast.jpeg"
 
 
 
