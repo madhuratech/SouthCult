@@ -1,6 +1,37 @@
 import { ArrowUpRight, Play } from "lucide-react";
+import { useEffect, useRef } from "react";
 
 export default function LatestRelease() {
+    const spotifyRef = useRef(null);
+
+
+    useEffect(() => {
+        let timeout;
+
+        const handleScroll = () => {
+            if (!spotifyRef.current) return;
+
+            // Disable iframe interaction while scrolling
+            spotifyRef.current.style.pointerEvents = "none";
+
+            clearTimeout(timeout);
+
+            // Re-enable after scrolling stops
+            timeout = setTimeout(() => {
+                if (spotifyRef.current) {
+                    spotifyRef.current.style.pointerEvents = "auto";
+                }
+            }, 150);
+        };
+
+        window.addEventListener("scroll", handleScroll, { passive: true });
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            clearTimeout(timeout);
+        };
+    }, []);
+
     return (
         <>
 
@@ -117,11 +148,22 @@ export default function LatestRelease() {
 
                     {/* Spotify Player */}
                     <div
-                        onMouseEnter={() => window.dispatchEvent(new Event("cursor-hide"))}
-                        onMouseLeave={() => window.dispatchEvent(new Event("cursor-show"))}
-                        className="rounded-[28px] overflow-hidden border border-white/10 bg-zinc-950 shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+                        className="
+                    rounded-[28px]
+                    overflow-hidden
+                    border border-white/10
+                    bg-zinc-950
+                    shadow-[0_20px_60px_rgba(0,0,0,0.45)]
+                "
+                        onMouseEnter={() =>
+                            window.dispatchEvent(new Event("cursor-hide"))
+                        }
+                        onMouseLeave={() =>
+                            window.dispatchEvent(new Event("cursor-show"))
+                        }
                     >
                         <iframe
+                            ref={spotifyRef}
                             src="https://open.spotify.com/embed/track/7v1tMD4WPsGlqNJzZkADVr?utm_source=generator"
                             width="100%"
                             height="380"
@@ -129,6 +171,7 @@ export default function LatestRelease() {
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                             loading="lazy"
                             title="Staying Down - Spotify"
+                            className="block"
                         />
                     </div>
                 </div>
