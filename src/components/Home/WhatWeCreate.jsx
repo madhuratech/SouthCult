@@ -6,8 +6,6 @@ import Music from "../../assets/service/Music.jpeg"
 import Documentary from "../../assets/service/Documentary.jpeg"
 import Podcast from "../../assets/service/Podcast.jpeg"
 
-
-
 gsap.registerPlugin(ScrollTrigger);
 
 const creations = [

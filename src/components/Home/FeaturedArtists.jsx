@@ -9,13 +9,15 @@ const artists = [
         name: "Marabu Kavi",
         role: "Independent Artist",
         image: Marabu,
-        spotify: "https://open.spotify.com/artist/1nCqcjvnRspRyd81QZa8Sr",
+        spotify: "https://open.spotify.com/artist/4ZI5kjqs53SfxggERnkycx",
+
     },
     {
         name: "YMC Barath",
         role: "Independent Artist",
         image: barath,
-        spotify: "https://open.spotify.com/artist/4ZI5kjqs53SfxggERnkycx",
+        spotify: "https://open.spotify.com/artist/1nCqcjvnRspRyd81QZa8Sr",
+
     },
 ];
 

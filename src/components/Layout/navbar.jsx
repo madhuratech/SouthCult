@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav
       className={`
         fixed z-50
-        transition-all duration-500 ease-in-out bg-black
+        transition-all duration-500 ease-in-out 
 
         ${
           scrolled
